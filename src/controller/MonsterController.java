@@ -24,27 +24,23 @@ public class MonsterController
 		Scanner inputScanner = new Scanner (System.in);
 		String name = inputScanner.nextLine();
 		userMonster.setName(name);
-		System.out.println("Your monster's name is " + userMonster.getName());
 		
 		System.out.println("How many legs do you want your monster to have?");
 		Double legCount = inputScanner.nextDouble();
 		userMonster.setlegCount(legCount);
-		System.out.println("Your monster has " + userMonster.getlegCount() + "legs!");
 		
 		System.out.println("How many eyes do you want your monster to have?");
 		int eyeCount = inputScanner.nextInt();
 		userMonster.seteyeCount(eyeCount);
-		System.out.println("Your monster has " + userMonster.geteyeCount() + "eyes!");
 			
 		System.out.println("Does your monster have a nose?");
 		boolean hasNoses = inputScanner.nextBoolean();
 		userMonster.sethasNose(hasNoses);
-		System.out.println("It is " + userMonster.gethasNoses() + "has a nose!");
 		
 		System.out.println("How many arms does your monster have?");
 		int armCount = inputScanner.nextInt();
 		userMonster.setarmCount(armCount);
-		System.out.println("Your monster's name is " + userMonster.getName() + "Your monster has " + userMonster.getlegCount() + " legs! Your monster has " + userMonster.geteyeCount() + "eyes! It is " + userMonster.gethasNoses() + " your monster has a nose. Your monster has " + userMonster.getarmCount() + " arms!");
+		System.out.println("Your monster's name is " + userMonster.getName() + ". Your monster has " + userMonster.getlegCount() + " legs! Your monster has " + userMonster.geteyeCount() + " eyes! It is " + userMonster.gethasNoses() + " your monster has a nose. Your monster has " + userMonster.getarmCount() + " arms!");
 		
 	}
 
