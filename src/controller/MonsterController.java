@@ -54,14 +54,19 @@ public class MonsterController
 		//System.out.println("Does your monster have a nose?");
 		//JOptionPane.showMessageDialog(null, "Does your monster have a nose?");
 		//boolean hasNoses = inputScanner.nextBoolean();
-		JOptionPane.showInputDialog(null, "Does your monster have a nose?");
+		userInput = JOptionPane.showInputDialog(null, "Does your monster have a nose?");
 		boolean answer = Boolean.parseBoolean(userInput);
-		userMonster.sethasNose(answer);
-		//if (userMonster.gethasNoses() == true)
-		//{
-			
-		//}
 		
+		userMonster.sethasNose(answer);
+		//JOptionPane.showMessageDialog(null, userMonster.gethasNoses());
+		if (userMonster.gethasNoses() == true)
+		{
+			JOptionPane.showMessageDialog(null, "Good your monster can smell things");
+			//else if (userMonster.gethasNoses() == false)
+			//{
+			//	JOptionPane.showMessageDialog(null, "Your monster may need a nose");
+			//}
+		}
 		//System.out.println("How many arms does your monster have?");
 		//JOptionPane.showMessageDialog(null, "How many arms does your monster have?");
 		//int armCount = inputScanner.nextInt();
